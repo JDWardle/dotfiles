@@ -1,6 +1,4 @@
-#if [ -f /usr/local/share/bash-completion/bash_completion ]; then
-#    . /usr/local/share/bash-completion/bash_completion
-#fi
+[ -f /usr/local/etc/bash_completion ] && . /usr/local/etc/bash_completion
 
 # Add $git_branch and $git_dirty to the environment.
 export GITAWAREPROMPT=~/.bash/jimeh/git-aware-prompt
