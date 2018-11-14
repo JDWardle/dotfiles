@@ -27,6 +27,8 @@ alias cp='cp -iv'                   # Copy with prompts when overwritting a file
 alias mv='mv -iv'                   # Move with prompts when overwritting a file.
 alias mkdir='mkdir -pv'
 alias sudo='sudo '                  # Allow these aliases to be used with sudo.
+alias uuidgen="uuidgen | tr -d '\n' | tr '[:upper:]' '[:lower:]' | pbcopy && pbpaste && echo"
+#alias gitcleanbranches="git fetch -p & git branch -vv | grep 'origin/.*: gone]' | awk '{print $1}' | xargs git branch -d"
 cd() { builtin cd "$@"; ll; }       # Always list directory contents upon 'cd'.
 mcd() { mkdir -p "$1" && cd "$1"; } # Make new directory and cd to it.
 
