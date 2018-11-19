@@ -2,7 +2,8 @@
     "files.autoSave": "afterDelay",
     "files.insertFinalNewline": true,
     "files.trimTrailingWhitespace": true,
-    "editor.fontFamily": "Source Code Variable",
+    "editor.fontFamily": "Hack",
+    "editor.fontSize": 12,
     "editor.renderWhitespace": "boundary",
     "editor.formatOnSave": true,
     "explorer.openEditors.visible": 0,
@@ -10,7 +11,28 @@
         80,
         120
     ],
-    "go.coverageDecorator": "gutter",
-    "go.formatTool": "goimports"
+    "go.coverageDecorator": {
+        "type": "highlight"
+    },
+    "go.formatTool": "goimports",
+    "go.coverOnSave": true,
+    "go.coverOnSingleTest": true,
+    "go.coverOnTestPackage": true,
+    "go.editorContextMenuCommands": {
+        "toggleTestFile": true,
+        "addTags": true,
+        "removeTags": true,
+        "testAtCursor": true,
+        "testFile": true,
+        "testPackage": true,
+        "generateTestForFunction": true,
+        "generateTestForFile": true,
+        "generateTestForPackage": true,
+        "addImport": true,
+        "testCoverage": true,
+        "playground": true
+    },
+    "go.removeTags": {
+        "promptForTags": true
+    }
 }
-

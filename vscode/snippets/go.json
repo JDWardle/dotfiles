@@ -29,6 +29,16 @@
 			"\t$0",
 			"}"
 		]
+	},
+	"Random source": {
+		"description": "Securely generate a random seed that is not concurrency safe",
+		"prefix": "randomSource",
+		"body": [
+			"var seed int64",
+			"if err := binary.Read(crand.Reader, binary.LittleEndian, &seed); err != nil {",
+			"\tpanic(err)",
+			"}",
+			"rnd := rand.New(rand.NewSource(seed))"
+		]
 	}
 }
-
