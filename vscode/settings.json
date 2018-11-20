@@ -2,15 +2,40 @@
     "files.autoSave": "afterDelay",
     "files.insertFinalNewline": true,
     "files.trimTrailingWhitespace": true,
+    "files.exclude": {
+        "**/.git": true,
+        "**/.svn": true,
+        "**/.hg": true,
+        "**/CVS": true,
+        "**/.DS_Store": true,
+        "**/.idea": true,
+    },
+    "search.exclude": {
+        "**/node_modules": true,
+        "**/bower_components": true,
+        "**/tmp": true
+    },
     "editor.fontFamily": "Hack",
     "editor.fontSize": 12,
     "editor.renderWhitespace": "boundary",
     "editor.formatOnSave": true,
+    "editor.tabCompletion": "on",
     "explorer.openEditors.visible": 0,
     "editor.rulers": [
         80,
         120
     ],
+    "editor.minimap.maxColumn": 80,
+    "editor.roundedSelection": false,
+    "workbench.colorCustomizations": {
+        "editorInfo.foreground": "#1e810a",
+        "editorWarning.foreground": "#fffb00",
+        "editorError.foreground": "#ff0000",
+    },
+    "workbench.editor.enablePreview": false,
+    "workbench.settings.editor": "json",
+    "window.restoreWindows": "all",
+    "window.restoreFullscreen": true,
     "go.coverageDecorator": {
         "type": "highlight"
     },
@@ -34,5 +59,16 @@
     },
     "go.removeTags": {
         "promptForTags": true
-    }
+    },
+    "ruby.lint": {
+        "rubocop": {
+            "lint": true
+        }
+    },
+    "workbench.colorTheme": "Darcula",
+    "zenMode.centerLayout": false,
+    "html.format.indentInnerHtml": true,
+    "html.format.endWithNewline": true,
+    "terminal.external.osxExec": "iTerm.app",
+    "breadcrumbs.enabled": true
 }
