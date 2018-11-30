@@ -15,6 +15,7 @@
         "**/bower_components": true,
         "**/tmp": true
     },
+    "search.useIgnoreFiles": false,
     "editor.fontFamily": "Hack",
     "editor.fontSize": 12,
     "editor.renderWhitespace": "boundary",
@@ -28,9 +29,14 @@
     "editor.minimap.maxColumn": 80,
     "editor.roundedSelection": false,
     "workbench.colorCustomizations": {
-        "editorInfo.foreground": "#1e810a",
-        "editorWarning.foreground": "#fffb00",
-        "editorError.foreground": "#ff0000",
+        "[Darcula]": {
+            "editorInfo.foreground": "#808080",
+            "editorWarning.foreground": "#BE9117",
+            "editorError.foreground": "#9E2927",
+            "editorOverviewRuler.infoForeground": "#808080",
+            "editorOverviewRuler.warningForeground": "#BE9117",
+            "editorOverviewRuler.errorForeground": "#9E2927"
+        }
     },
     "workbench.editor.enablePreview": false,
     "workbench.settings.editor": "json",
@@ -62,13 +68,33 @@
     },
     "ruby.lint": {
         "rubocop": {
-            "lint": true
+            "rails": true,
+            "lint": true,
+            "gems": true
         }
     },
+    "ruby.specCommand": "rails test",
+    "ruby.specPattern": "test",
+    "ruby.specSaveFile": true,
     "workbench.colorTheme": "Darcula",
     "zenMode.centerLayout": false,
     "html.format.indentInnerHtml": true,
     "html.format.endWithNewline": true,
     "terminal.external.osxExec": "iTerm.app",
-    "breadcrumbs.enabled": true
+    "breadcrumbs.enabled": true,
+    "solargraph.diagnostics": true,
+    "better-comments.tags": [
+        {
+            "tag": "todo",
+            "color": "#A8C023",
+            "strikethrough": false,
+            "backgroundColor": "transparent"
+        },
+        {
+            "tag": "note",
+            "color": "#0977AB",
+            "strikethrough": false,
+            "backgroundColor": "transparent"
+        }
+    ]
 }
